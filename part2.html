@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Account Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="form-card">
+            <h2>Create Account</h2>
+            <form>
+                <div>
+                    <label>First name</label>
+                    <input type="text" placeholder="enter your first name">
+                </div>
+
+                <div>
+                    <label>Last name</label>
+                    <input type="text" placeholder="enter your last name">
+                </div>
+                <div class="full">
+                    <label>Email*</label>
+                    <input type="email" placeholder="enter your email">
+                </div>
+
+                <div>
+                    <label>Password *</label>
+                    <input type="password" placeholder="enter your password">
+                </div>
+
+                <div>
+                    <label>Hobbies</label>
+                    <div class="inline-group">
+                        <label><input type="checkbox">Music</label>
+                        <label><input type="checkbox">Sports</label>
+                        <label><input type="checkbox">Travel</label>
+                        <label><input type="checkbox">Movies</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Source of Income</label>
+                    <select>
+                        <option>Employed</option>
+                        <option>Student</option>
+                        <option>Freelancer</option>
+                        <option>Unemployed</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Income</label>
+                    <div class="range-wrapper">
+                        <input type="range" min="0" max="100" value="20" oninput="incomeValue.textContent= this.value + 'K'">
+                        <span id="incomeValue" class="income-value">20K</span>
+                    </div>
+                </div>
+
+                <div class="full">
+                    <label>Upload Profile Picture</label>
+                    <input type="file">
+                </div>
+
+                <div>
+                    <label>Age</label>
+                    <input type="number" placeholder="18">
+                </div>
+
+                <div class="full">
+                    <label>Bio</label>
+                    <textarea placeholder=""></textarea>
+                </div>
+
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </body>
+</html>
